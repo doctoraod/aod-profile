@@ -1,0 +1,51 @@
+[debug] [2017-12-17T08:53:51.137Z] ----------------------------------------------------------------------
+[debug] [2017-12-17T08:53:51.140Z] Command:       /Users/aod/.nvm/versions/node/v9.2.0/bin/node /usr/local/bin/firebase deploy --token 
+[debug] [2017-12-17T08:53:51.140Z] CLI Version:   3.9.2
+[debug] [2017-12-17T08:53:51.140Z] Platform:      darwin
+[debug] [2017-12-17T08:53:51.140Z] Node Version:  v9.2.0
+[debug] [2017-12-17T08:53:51.142Z] Time:          Sun Dec 17 2017 15:53:51 GMT+0700 (+07)
+[debug] [2017-12-17T08:53:51.142Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-17T08:53:51.154Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-17T08:53:51.154Z] > authorizing via signed-in user
+[debug] [2017-12-17T08:53:51.156Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/aod-profile  
+ Sun Dec 17 2017 15:53:51 GMT+0700 (+07)
+[debug] [2017-12-17T08:53:53.989Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-17T08:53:53.990Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/aod-profile/tokens  
+ Sun Dec 17 2017 15:53:53 GMT+0700 (+07)
+[debug] [2017-12-17T08:53:54.961Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'aod-profile'...
+[info] 
+[info] i  deploying database, functions, hosting
+[info] ✔  database: rules ready to deploy.
+[debug] [2017-12-17T08:53:56.145Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "dependencies": {
+    "firebase-admin": "~4.2.1",
+    "firebase-functions": "^0.5.7"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[info] i  runtimeconfig: ensuring necessary APIs are enabled...
+[debug] [2017-12-17T08:53:56.147Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/aod-profile?view=CONSUMER_VIEW  
+ Sun Dec 17 2017 15:53:56 GMT+0700 (+07)
+[debug] [2017-12-17T08:53:56.147Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/aod-profile?view=CONSUMER_VIEW  
+ Sun Dec 17 2017 15:53:56 GMT+0700 (+07)
+[debug] [2017-12-17T08:53:57.657Z] <<< HTTP RESPONSE 200
+[info] ✔  runtimeconfig: all necessary APIs are enabled
+[debug] [2017-12-17T08:53:57.724Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2017-12-17T08:53:57.725Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/aod-profile  
+ Sun Dec 17 2017 15:53:57 GMT+0700 (+07)
+[debug] [2017-12-17T08:53:57.726Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/aod-profile/apiKeys  
+ Sun Dec 17 2017 15:53:57 GMT+0700 (+07)
+[debug] [2017-12-17T08:53:59.119Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-17T08:53:59.129Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2017-12-17T08:54:01.033Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/aod-profile/configs  
+ Sun Dec 17 2017 15:54:01 GMT+0700 (+07)
+[debug] [2017-12-17T08:54:01.520Z] <<< HTTP RESPONSE 200
+[info] i  hosting: preparing build directory for upload...
