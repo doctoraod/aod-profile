@@ -2,6 +2,3 @@
 
 ## Start
 ```yarn start```
-
-## Lib
-- React
